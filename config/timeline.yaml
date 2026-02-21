@@ -343,6 +343,51 @@ presets:
       6: "all_day"
       7: "all_day"
 
+  # ───────────────────────────────────────────────────────────
+  # 5️⃣ daily_once_ai - 每天一次（AI 日报）
+  #
+  # 其余时间仅采集，不推送；每天固定时间窗口内推送一次。
+  # 适合：希望每天只收一条最新汇总的用户
+  # ───────────────────────────────────────────────────────────
+  daily_once_ai:
+    name: "每天一次 AI 日报"
+    description: "每天固定时段只推送一次，其他时间仅采集。"
+
+    default:
+      collect: true
+      analyze: false
+      ai_mode: "daily"
+      push: false
+      report_mode: "daily"
+      once:
+        analyze: true
+        push: true
+
+    periods:
+      daily_digest:
+        name: "每日汇总"
+        start: "07:00"
+        end: "09:00"
+        analyze: true
+        ai_mode: "daily"
+        push: true
+        report_mode: "daily"
+        once:
+          analyze: true
+          push: true
+
+    day_plans:
+      all_day:
+        periods: ["daily_digest"]
+    week_map:
+      1: "all_day"
+      2: "all_day"
+      3: "all_day"
+      4: "all_day"
+      5: "all_day"
+      6: "all_day"
+      7: "all_day"
+
 
 # ═══════════════════════════════════════════════════════════════
 #
