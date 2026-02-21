@@ -17,7 +17,7 @@ app:
   #   - America/New_York (美东时间 UTC-5/-4)
   #   - Europe/London (伦敦时间 UTC+0/+1)
   # 完整时区列表: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-  timezone: "Asia/Shanghai"
+  timezone: "Asia/Singapore"
   show_version_update: true           # 显示版本更新提示
 
 

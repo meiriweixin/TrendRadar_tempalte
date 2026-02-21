@@ -367,7 +367,7 @@ presets:
       daily_digest:
         name: "每日汇总"
         start: "07:00"
-        end: "09:00"
+        end: "08:00"
         analyze: true
         ai_mode: "daily"
         push: true
